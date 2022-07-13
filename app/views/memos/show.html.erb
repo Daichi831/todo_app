@@ -3,8 +3,8 @@
 <%= render @memo %>
 
 <div>
-  <%= link_to "Edit this memo", edit_memo_path(@memo) %> |
-  <%= link_to "Back to memos", memos_path %>
+  <%= link_to "編集", edit_memo_path(@memo) %> |
+  <%= link_to "戻る", memos_path %>
 
-  <%= button_to "Destroy this memo", @memo, method: :delete %>
+  <%= button_to "削除", @memo, method: :delete %>
 </div>

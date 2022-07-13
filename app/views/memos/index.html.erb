@@ -4,11 +4,14 @@
 
 <div id="memos">
   <% @memos.each do |memo| %>
-    <%= render memo %>
     <p>
-      <%= link_to "Show this memo", memo %>
+      <strong>タイトル:</strong>
+      <%= memo.title %>
+    </p>
+    <p>
+      <%= link_to "詳細", memo %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New memo", new_memo_path %>
+<%= link_to "新規作成", new_memo_path %>
